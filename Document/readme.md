@@ -1,2 +1,0 @@
-HouseRent/client
-HouseRent/server
