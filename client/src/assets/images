@@ -1,0 +1,14 @@
+<Card.Img
+  variant="top"
+  src={
+    property.images &&
+    property.images.length > 0 &&
+    property.images[0].startsWith("http")
+      ? property.images[0]
+      : "/no-image.png"
+  }
+  style={{
+    height: "220px",
+    objectFit: "cover",
+  }}
+/>

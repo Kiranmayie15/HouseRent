@@ -1,0 +1,183 @@
+/* ─── Dashboard Layout ─── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #080e1a;
+  font-family: 'Inter', 'Space Grotesk', Arial, sans-serif;
+  color: #f1f5f9;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  background: #080e1a;
+}
+
+/* ─── Header ─── */
+.dashboard-header {
+  height: 68px;
+  background: rgba(11, 18, 32, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* ─── Logo ─── */
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6C63FF, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+/* ─── Navigation ─── */
+.dashboard-nav {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.dashboard-nav a {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 9px 16px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.dashboard-nav a:hover {
+  color: #f1f5f9;
+  background: rgba(108, 99, 255, 0.1);
+}
+
+.active-link {
+  color: #fff !important;
+  background: linear-gradient(135deg, rgba(108,99,255,0.2), rgba(139,92,246,0.12)) !important;
+  border-color: rgba(108, 99, 255, 0.25) !important;
+}
+
+/* ─── Right Section ─── */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.welcome {
+  color: #94a3b8;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.logout-btn {
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  outline: none;
+  cursor: pointer;
+  background: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+  padding: 9px 20px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+}
+
+/* ─── Content ─── */
+.dashboard-content {
+  padding: 36px 40px;
+}
+
+/* ─── Stat Cards ─── */
+.stat-card {
+  background: linear-gradient(135deg, #111827, #0f172a);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: rgba(108, 99, 255, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+.stat-card-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6C63FF, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-card-label {
+  color: #64748b;
+  font-size: 0.88rem;
+  margin-top: 4px;
+}
+
+/* ─── Section heading ─── */
+.section-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 20px;
+}
+
+/* ─── Table ─── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  background: rgba(108, 99, 255, 0.12);
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.data-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  background: transparent;
+}
+
+.data-table tr:hover td {
+  background: rgba(108, 99, 255, 0.04);
+}
+
+@media (max-width: 768px) {
+  .dashboard-header { padding: 0 16px; }
+  .dashboard-nav { display: none; }
+  .dashboard-content { padding: 20px 16px; }
+}

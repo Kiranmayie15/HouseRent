@@ -1,0 +1,162 @@
+/* ─── My Properties Page ─── */
+.my-properties-page {
+  padding: 32px;
+  background: #080e1a;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ─── Table Card ─── */
+.property-table-card {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.table-title {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #f1f5f9;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin: 0;
+  background: linear-gradient(90deg, rgba(108,99,255,0.08), transparent);
+}
+
+/* ─── Table ─── */
+.property-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.property-table thead tr {
+  background: rgba(108,99,255,0.1);
+}
+
+.property-table th {
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 13px 20px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.property-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 14px 20px;
+  background: transparent;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: background 0.2s ease;
+}
+
+.property-table tbody tr:hover td {
+  background: rgba(108,99,255,0.04);
+}
+
+.property-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ─── Status badges ─── */
+.available {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #34d399;
+  font-weight: 700;
+  font-size: 0.82rem;
+  background: rgba(16,185,129,0.12);
+  border: 1px solid rgba(16,185,129,0.25);
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+
+.unavailable {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #f87171;
+  font-weight: 700;
+  font-size: 0.82rem;
+  background: rgba(239,68,68,0.12);
+  border: 1px solid rgba(239,68,68,0.25);
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+
+/* ─── Action Buttons ─── */
+.edit-btn {
+  background: linear-gradient(135deg, rgba(108,99,255,0.2), rgba(139,92,246,0.15));
+  border: 1px solid rgba(108,99,255,0.35);
+  color: #a5b4fc;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background: rgba(108,99,255,0.3);
+  border-color: rgba(108,99,255,0.6);
+  color: #c4b5fd;
+  transform: translateY(-1px);
+}
+
+.delete-btn {
+  background: rgba(239,68,68,0.12);
+  border: 1px solid rgba(239,68,68,0.25);
+  color: #f87171;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.delete-btn:hover {
+  background: rgba(239,68,68,0.22);
+  border-color: rgba(239,68,68,0.5);
+  color: #fca5a5;
+  transform: translateY(-1px);
+}
+
+/* ─── Empty state ─── */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #374151;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-state-text {
+  font-size: 1rem;
+  color: #475569;
+}
